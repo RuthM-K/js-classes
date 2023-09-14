@@ -4,11 +4,11 @@
 
 const firstName = 'John'
 const lastName = 'Doe'
-const fullName = `John ${lastName} of age ${100-76}` 
+const fullName = `John ${lastName} of age ${100-76} ${new Date()}`
 
 console.log(fullName)
 
 //string concatenation - joining strings together using (+)
-const newFullName = firstName + ' ' + lastName;
+const newFullName = firstName + ' ' + lastName + ' ' + new Date();
 
 console.log(newFullName)
