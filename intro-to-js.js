@@ -11,7 +11,7 @@ result = 3 * (10-4)
 result
 console.log(result)
 
-// looup expression; a avariable has been assigned a value
+// lookup expression; a avariable has been assigned a value
 result
 
 // Mutability and immutability
