@@ -51,9 +51,9 @@ console.log(23 > 56 && "sth")
 //OR (||) double pipe operator
 console.log(23 > 6 || "sth")
 
-//ternary expression
+//ternary operator
 
-const age = 15
+const age = 25
 
 const canVote = age > 18 ? "Can Vote" : "Cannot Vote"
 
