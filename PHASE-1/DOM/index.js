@@ -57,3 +57,60 @@ console.log(secondElement)
 const divs = document.querySelectorAll('div')
 
 console.log(divs)
+
+
+//dom manipulation--on wednesday
+//1. creating elements dynamically
+const paragraph= document.createElement('p')
+
+//adding content to elements
+paragraph.innerText = 'This is my first dynamic paragraph tag'
+
+//2. adding elements to the dom
+const domManipulationDiv = document.getElementById('DOM manipulation')
+domManipulationDiv.append(paragraph)
+
+console.log(domManipulationDiv)
+
+// adding elements using inerHTML
+const h1Tag= `<h1>H1 Tag</h1>`
+//domManipulationDiv.innerHTML = h1Tag //deletes every other element within the parent tag
+domManipulationDiv.append(document.createElement('h1'));//.append places the new element below the previous
+
+
+//more examples on creating, adding  & appending elements
+const headerTwo= document.createElement('h2')
+//console.log(headerTwo)
+
+//after creating it, add some text into the h2 using .inntertext
+headerTwo.innerText= 'This is my second header'
+//console.log(headerTwo)
+//last step, append or attach the dynamically created element and attach it where needed
+//in this case, append the he to the dommanipulationdiv.
+domManipulationDiv.append(headerTwo)
+
+//create anchor tag
+const link= document.createElement('a')
+link.innerText= 'Wikipedia'
+link.href= 'https://en.wikipedia.org/wiki/Ada_Lovelace'
+
+console.log(link)
+
+domManipulationDiv.append(link)
+
+//using the .innerhtml
+//use backticks to be able to add new values
+const secondDiv= document.getElementById('dom');
+
+//to add styles; but its best to use css instead of changing it dynamically
+secondDiv.style.backgroundColor= '#f2f'
+
+
+const elements= `
+    <p> This is the second div ${new Date().getFullYear()}</p>
+    <h1><h1>
+    <h2> This  is the second div</h2>
+    <a href="https://en.wikipedia.org/wiki/Ada_Lovelace">Ada Lovelace</a>
+`;
+
+secondDiv.innerHTML= elements
